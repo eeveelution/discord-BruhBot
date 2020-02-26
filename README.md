@@ -1,2 +1,2 @@
 # discord-BruhBot
-My bot i use for my discord server
+BruhBot is a WIP project
