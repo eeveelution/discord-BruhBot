@@ -67,8 +67,7 @@ async def join(ctx):
 @client.command(pass_context=True)
 async def leave(ctx):
     try:
-        channel = ctx.author.voice.channel
-        voice_client = client.voice_client_in(channel)
+        channel = ctx.message.guild.voice_client
         await channel.disconnect()
         await ctx.send('I have left')
     except:
